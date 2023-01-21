@@ -36,43 +36,53 @@ body {
 
 .header a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #e5e7eb;
 }
 
 /* HERO SECTION */
 .hero-section {
     /* border: 2px solid red; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0.6rem 12rem;
+    padding: 10rem 12rem;
 
+    background-image: url(./images/glacier-hero-img.jpg);
+    background-size: cover;
+    background-position: 25% 80%;
     background-color: #1F2937;
 }
 
 .hero-text {
     width: 40%;
+    text-align: center;
 }
 
 .hero-section .hero-title {
     font-size: 48px;
     font-weight: 900;
-    color: #F9FAF8;
+    color: rgba(229, 231, 235, 0.9);
 }
 
 .hero-section .sub-heading {
-    color: #E5E7EB;
+    color: rgba(229, 231, 235, 0.9);
     font-size: 18px;
+    /* font-weight: 500; */
     margin-top: -45px;
 }
 
-.hero-section .hero-btn {
+.hero-btn {
     color: #F9FAF8;
     font-size: 18px;
     background-color: #3882F6;
     border: none;
     padding: 10px 35px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #3174e0;
 }
 
 .hero-image {
@@ -81,6 +91,100 @@ body {
     height: auto;
     padding: 3em 0;
     /* border-radius: 10%; */
+}
+
+.hikes-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+
+.second-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 1rem 0;
+}
+
+.hikes {
+    /* border: 3px solid red; */
+    text-align: center;
+    display: flex;
+    gap: 32px;
+    padding: 1rem 12rem 6rem 12rem;
+    /* width: 50%; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hike  {
+    width: 20rem;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.hike-img-1 {
+    background-image: url(./images/yosemite-img.jpg);
+}
+
+.hike-img-2 {
+  background-image: url(./images/zion-img.jpg);
+}
+
+.hike-img-3 {
+    background-image: url(./images/the-wave-img.jpg);
+}
+
+.hike-img-4 {
+    background-image: url(./images/rattlesnake-img.jpg);
+}
+
+.hike-img-1, 
+.hike-img-2,
+.hike-img-3,
+.hike-img-4 {
+    background-size: cover;
+    background-color: #1F2937;
+    padding: 200px 10px;
+    border-radius: 2rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 6rem 0; */
+}
+
+.about-info {
+    display: flex;
+    padding: 1rem 12rem 6rem 12rem;
+}
+
+.about-text {
+    width: 50%;
+    margin-left: auto;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    background-color: #1F2937;
+    background-image: url(./images/melvin-img.jpeg);
+    padding: 200px 200px;
+    background-size: cover;
+    border-radius: 2rem;
 }
 
 
@@ -94,4 +198,42 @@ body {
     padding: 15px 0;
 }
 
+.cta {
+    padding: 6rem 12rem;
+}
+
+.cta .container {
+    background-color: #3174e0;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.cta p {
+    margin-top: -1.2rem;
+    color: #e5e7eb;
+}
+
+.cta .cta-btn {
+    color: #F9FAF8;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #F9FAF8;
+    padding: 10px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-btn:hover {
+    background-color: #e5e7eb;
+    color: #1F2937;
+}
 
